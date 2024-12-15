@@ -1,3 +1,20 @@
+@import url('reset.css');
+@import url('global.css');
+
+.s-wrapper {
+  display: flex;
+  height: 100vh;
+  flex-flow: row nowrap;
+}
+
+.s-wrapper .s-left-column {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navigator {
   height: 80vh;
   display: flex;
@@ -19,11 +36,11 @@
   margin-bottom: 0;
 }
 
-.navigator ul li a{
+.navigator ul li a {
   color: white;
   border: solid 2px white;
-  width:45px;
-  height:45px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: black;
   display: flex;
@@ -38,20 +55,16 @@
   width: 2px;
   height: 100%;
   background-color: white;
-  z-index: -10;
+  z-index: -1;
 }
 
-.navigator ul{
-  z-index: 1;
-}
-
-.navigator ul li a:hover, 
+.navigator ul li a:hover,
 .navigator ul li a.active {
   color: var(--primary-color);
   background-color: white;
 }
 
-.navigator .navigator__icon{
+.navigator .navigator__icon {
   position: absolute;
   top: -20px;
 }
